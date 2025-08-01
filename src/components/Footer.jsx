@@ -8,7 +8,7 @@ function Footer() {
   const [visitorCount, setVisitorCount] = useState("Loading...");
 
   useEffect(() => {
-    fetch("https://sipio-kappa.vercel.app/api/visitor", { method: "POST" })
+    fetch("sipio-tangsel.vercel.app/api/visitor", { method: "POST" })
       .then((res) => res.json())
       .then((data) => setVisitorCount(data.count))
       .catch(() => setVisitorCount("Error"));
