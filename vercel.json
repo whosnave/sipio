@@ -1,0 +1,4 @@
+{
+  "version": 2,
+  "builds": [{ "src": "api/visitor.js", "use": "@vercel/node" }]
+}
